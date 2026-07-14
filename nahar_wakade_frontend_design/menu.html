@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brńt Café</title>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style-menu.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="back-button">&lt;</a>
+        Our Menu
+    </nav>
+
+    <main>
+        <div class="menu-controls">
+            <div class="searchBar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="search" id="searchInput">
+            </div>
+
+            <button class="category active"
+                    data-category="all">
+                All
+            </button>
+
+            <button class="category" data-category="beverages"> 
+                Beverages
+            </button>
+
+            <button class="category" data-category="appetizers">
+                Appetizers
+            </button>
+
+            <button class="category" data-category="desserts">
+                Desserts
+            </button>
+        </div>
+
+        <div class="menu-items" id="menuContainer">
+            <div class="menu-card"
+                 data-category="beverages"
+                 data-name="Classic Cappuccino">
+
+                 <img src="classic cappuccino.jpg" alt="classic cappuccino">
+
+                 <div class="menu-card-info">
+                    <h2>Classic Cappuccino</h2>
+                    <p>Rich espresso blended with steamed milk and topped with smooth, airy foam.</p>
+                    <span>₹320</span>
+                 </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="beverages"
+                 data-name="Hazelnut Cold Coffee">
+
+                 <img src="hazelnut cold coffee.jpg" alt="Hazelnut Cold Coffee">
+
+                 <div class="menu-card-info">
+                    <h2>Hazelnut Cold Coffee</h2>
+                    <p>Chilled creamy coffee infused with a sweet and nutty hazelnut flavour.</p>
+                    <span>₹500</span>
+                 </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="beverages"
+                 data-name="Iced Matcha Latte">
+
+                 <img src="Iced Matcha Latte.jpg" alt="Iced Matcha Latte">
+
+                 <div class="menu-card-info">
+                    <h2>Iced Matcha Latte</h2>
+                    <p>Smooth Japanese matcha served over ice with lightly sweetened milk.</p>
+                    <span>₹670</span>
+                 </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="beverages"
+                 data-name="Peach Iced Tea">
+
+                 <img src="Peach Iced Tea.jpg" alt="Peach Iced Tea">
+
+                 <div class="menu-card-info">
+                    <h2>Peach Iced Tea</h2>
+                    <p>Refreshing black tea infused with juicy peach and served ice-cold.</p>
+                    <span>₹480</span>
+                 </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="beverages"
+                 data-name="Belgian Hot Chocolate">
+
+                 <img src="belgian hot chocolate.jpeg" alt="Belgian Hot Chocolate">
+
+                 <div class="menu-card-info">
+                    <h2>Belgian Hot Chocolate</h2>
+                    <p>Thick and velvety hot chocolate made with rich Belgian cocoa.</p>
+                    <span>₹360</span>
+                 </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="appetizers"
+                 data-name="Peri-Peri Chicken Sliders">
+
+                 <img src="Peri-Peri Chicken Sliders.jpeg" alt="Peri-Peri Chicken Sliders">
+
+                 <div class="menu-card-info">
+                    <h2>Peri-Peri Chicken Sliders</h2>
+                    <p>Juicy chicken sliders layered with spicy peri-peri sauce and fresh greens.</p>
+                    <span>₹400</span>
+                 </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="appetizers"
+                 data-name="Pesto Paneer Sliders">
+
+                 <img src="Pesto Paneer Sliders.webp" alt="Pesto Paneer Sliders">
+
+                 <div class="menu-card-info">
+                    <h2>Pesto Paneer Sliders</h2>
+                    <p>Soft slider buns filled with grilled paneer, pesto and crunchy vegetables.</p>
+                    <span>₹270</span>
+                 </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="appetizers"
+                 data-name="Avocado Toast">
+
+                 <img src="Avocado Sourdough Toast.jpg" alt="Avocado Toast">
+
+                 <div class="menu-card-info">
+                    <h2>Avocado Toast</h2>
+                    <p>Toasted artisan sourdough topped with creamy avocado and herbs.</p>
+                    <span>₹520</span>
+                 </div>
+            </div>
+
+            <div class="menu-card changes"
+                 data-category="appetizers"
+                 data-name="Cheesy Garlic Crostini">
+
+                 <img src="Cheesy Garlic Crostini.jpeg" alt="Cheesy Garlic Crostini">
+
+                 <div class="menu-card-info">
+                    <h2>Cheesy Garlic Crostini</h2>
+                    <p>Crisp bread slices topped with garlic butter, herbs and melted cheese.</p>
+                    <span>₹450</span>
+                 </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="appetizers"
+                 data-name="Loaded Potato Wedges">
+
+                 <img src="Loaded Potato Wedges.jpeg" alt="Loaded Potato Wedges">
+
+                 <div class="menu-card-info">
+                    <h2>Loaded Potato Wedges</h2>
+                    <p>Crispy potato wedges loaded with cheese, sauces and flavourful seasonings.</p>
+                    <span>₹330</span>
+                 </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="desserts"
+                 data-name="Belgian Chocolate Pastry">
+
+                 <img src="Belgian Chocolate Pastry.webp" alt="Belgian Chocolate Pastry">
+
+                 <div class="menu-card-info">
+                    <h2>Belgian Chocolate Pastry</h2>
+                    <p>Moist chocolate sponge layered with rich Belgian chocolate ganache.</p>
+                    <span>₹220</span>
+                 </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="desserts"
+                 data-name="Blueberry Cheesecake">
+
+                 <img src="Blueberry Cheesecake.jpg" alt="Blueberry Cheesecake">
+
+                 <div class="menu-card-info">
+                    <h2>Blueberry Cheesecake</h2>
+                    <p>Creamy baked cheesecake finished with a sweet blueberry compote.</p>
+                    <span>₹470</span>
+                 </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="desserts"
+                 data-name="Butter Croissant changes">
+
+                 <img src="Butter crossiant.webp" alt="Butter Croissant">
+
+                 <div class="menu-card-info">
+                    <h2>Butter Croissant</h2>
+                    <p>A light, flaky and buttery pastry baked until perfectly golden.</p>
+                    <span>₹150</span>
+                 </div>
+            </div>
+
+            <div class="menu-card"
+                 data-category="desserts"
+                 data-name="Tiramisu Cup">
+
+                 <img src="Tiramisu Cup.jpeg" alt="Tiramisu Cup">
+
+                 <div class="menu-card-info">
+                    <h2>Tiramisu Cup</h2>
+                    <p>Layers of coffee-soaked sponge and mascarpone cream finished with cocoa.</p>
+                    <span>₹280</span>
+                 </div>
+            </div>
+
+            <div class="menu-card changes"
+                 data-category="desserts"
+                 data-name="Biscoff Lotus Cheesecake">
+
+                 <img src="Biscoff Cheesecake.webp" alt="Biscoff Lotus Cheesecake">
+
+                 <div class="menu-card-info">
+                    <h2>Biscoff Lotus Cheesecake</h2>
+                    <p>Cheesecake topped with caramelised Biscoff spread and biscuit crumbs.</p>
+                    <span>₹470</span>
+                 </div>
+            </div>
+        </div>
+    </main>
+    <script src="menu.js"></script>
+</body>
+</html>
